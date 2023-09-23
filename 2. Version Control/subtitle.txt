@@ -1,0 +1,55 @@
+Have you ever accidentally
+deleted something on your device and wished you
+could undo your mistake? Wouldn't it be great if
+you had a time machine to go back and
+undo your mistake? While humans can't yet
+to travel back in time, programmers working on projects can do something quite like it. They do this using a system
+called version control. As a programmer, you'll be
+working with many files in your project and
+it's important to keep track of the
+changes being made. Version control is a
+system that records all changes and modifications to files for tracking purposes, and is essential to your day-to-day
+development activities. In this course, you will
+become familiar with version control and how it
+relates to development. By the end of your studies, you'll understand what
+version control is, how it works and how it is used. There are both centralized and distributed control systems available and you'll examine the different types of
+workflows available. Conflict resolution is an important aspect
+of version control as it helps users manage file and version
+conflict issues. You'll get to explore popular
+methods of version tracking using version control
+technologies like Git and GitHub, and you will learn
+how to create and clone a repository in GitHub. In addition, you
+will become familiar with Git concepts such as add, commit, push and pull, branching and forking,
+diff and blame. As well as focusing
+on version control, the course also
+explores the use of command-line syntax with an
+emphasis on Unix commands. There are many videos
+in your course that will gradually guide
+you toward that goal. Watch, pause, rewind, and re-watch the videos until you are confident
+in your skills. Then you'll be able to consolidate your
+knowledge by consulting the course readings
+and put your skills into practice during
+the course exercises. Along the way, you'll
+encounter several knowledge quizzes where you
+can self-check your progress. You're not alone in considering a career as a web developer, and the course
+discussion prompts enable you to connect
+with your classmates. It's a great way to
+share knowledge, discuss difficulties,
+and make new friends. To help you be successful
+in the course, it's a great idea to commit to a regular and
+discipline approach to your learning regime. You need to be as serious as you can about your study
+and if possible, map out a study
+schedule with dates and times that you can devote
+to attending the course. Of course, this is an online self-paced program
+and you can study a dates, times, and places that
+suit your lifestyle. However, it might
+help to think of your study in terms of
+regular attendance, just as you might have to do at a physical
+learning institute. You may have encountered new technical words and
+terminology in this video. Don't worry if you don't fully understand all these
+terms right now, everything you need will be
+covered during your learning. In summary, this course
+provides you with a complete introduction
+to version control and it is part of a program
+of courses that lead you towards a career in
+software development.
