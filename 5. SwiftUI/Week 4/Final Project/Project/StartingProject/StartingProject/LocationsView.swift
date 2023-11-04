@@ -7,14 +7,16 @@ struct LocationsView: View {
             LittleLemonLogo() // 1
                 .padding(.top, 50)
             
-            EmptyView() // 2
-            .padding([.leading, .trailing], 40)
-            .padding([.top, .bottom], 8)
-            .background(Color.gray.opacity(0.2))
-            .cornerRadius(20)
+            Text(model.displayingReservationForm ? "Reservation Details" : "Select a Location")
+                .padding([.leading, .trailing], 40)
+                .padding([.top, .bottom], 8)
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(20)
             
-            NavigationView {
-                EmptyView() // 3
+            NavigationStack {
+                List(model.restaurants, id: \.self){ restaurant in
+                    NavigationLink(destination: ReservationForm(restaurant), label: {RestaurantView(restaurant)})
+                } // 3
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
             }

@@ -49,8 +49,19 @@ struct ReservationForm: View {
                         TextField("",
                                   value: $party,
                                   formatter: NumberFormatter())
+                        //NumberFormatter confirms that it is a number
                         .keyboardType(.numberPad)
+                        //To show a numPad Keyboard(keypad)
                         // add a modifier here
+                        .onSubmit {
+                            if party == 0{
+                                party = 1
+                            }
+                        }
+                        //OR
+//                        .onChange(of: party) { value in
+//                            if value < 1 { party = 1}
+//                        }
                     }
                     
                     
@@ -120,7 +131,7 @@ struct ReservationForm: View {
                     
                     // add the RESERVE button
                     Button(action: {
-
+                        validateForm()
                     }, label: {
                         Text("CONFIRM RESERVATION")
                     })
@@ -129,6 +140,7 @@ struct ReservationForm: View {
                     .background(Color.blue)
                     .cornerRadius(20)
                     .padding(.top, 10)
+//                    .onTapGesture(perform: {validateForm()}) //Or write in action
                 }
             }
             
@@ -148,7 +160,11 @@ struct ReservationForm: View {
             }
             
             // add an alert after this line
-            
+            .alert(errorMessage, isPresented: $showFormInvalidMessage){
+//                Button("OK", role: .cancel){} //Optional. NOT WORKING MAYBE. ASK SOMEONE.
+//                    .foregroundStyle(Color.green)
+                //arg action or {}
+            }
         }
         .onAppear {
             model.displayingReservationForm = true
@@ -236,12 +252,3 @@ struct ReservationForm_Previews: PreviewProvider {
         ReservationForm(sampleRestaurant).environmentObject(Model())
     }
 }
-
-
-
-
-
-
-
-
-

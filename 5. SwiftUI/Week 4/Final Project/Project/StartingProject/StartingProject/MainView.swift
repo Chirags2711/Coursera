@@ -23,7 +23,7 @@ struct MainView: View {
                     }
                 }
         }
-        .environmentObject(model)
+        .environmentObject(model) //passed to @EnvironmentObject in LocationsView
 
     }
 }
